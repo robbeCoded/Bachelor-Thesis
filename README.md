@@ -51,10 +51,19 @@ For evaluation, I will use a Likert Scale-based evaluation to assess how well KM
 ## Timetable
 The work is planned to be carried out according to the following schedule:
 
-* Week 1-2: Conduct a literature review and identify initial requirements.
-* Week 3-4: Conduct expert interviews and validate the initial list of requirements.
-* Week 5: Develop and distribute the questionnaire.
-* Week 6-7: Analyze the results of the questionnaire and refine the requirements catalog.
-* Week 8-10: Evaluate KMP against the requirements catalog.
-* Week 11-13: Write the thesis report and prepare for presentation.
-* Week 14: Submit the final version of the thesis and present the results.
+| Week | Activities                                                                 |
+|------|----------------------------------------------------------------------------|
+| KW22 | Literature review and topic exploration. Collect and review material for the requirements catalog. |
+| KW23 | Continue literature review. Organize findings into preliminary categories for the catalog. Search for experts to conduct the interviews with. |
+| KW24 | Prepare interviews and questionnaire. |
+| KW25 | Conduct interviews. Send out the questionnaire. Analyze data from the interviews. |
+| KW26 | Review the time tracking application. Does it have the necessary features to test it against the catalog? Add features / write small sample applications for the categories of the catalog, that are not present in the app. |
+| KW27 | Continue testing KMP against the catalog. Analyze the response to the questionnaire. Finalize the catalogue. |
+| KW28 | Complete the testing and analyze the results. |
+| KW29 | Evaluate the performance of KMP against the requirements catalog. |
+| KW30 | Comparison of KMP with other popular cross-platform frameworks like Flutter and React Native |
+| KW31 | Writing, writing, writing... |
+| KW32 | Writing, writing, writing... |
+| KW33 | Get feedback on the thesis from reference persons. |
+| KW34 | Incorporate feedback and final touches. Printing. |
+| KW35 | Submission |
