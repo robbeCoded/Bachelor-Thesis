@@ -1,0 +1,36 @@
+    License
+    Target Platforms
+    Development Platforms
+    Distribution Channels
+    Monetization
+    Internationalization
+    Long-term Feasibility
+    Development Environment
+    Preparation Time
+    Scalability
+    Development Process Fit
+    UI Design
+    Testing
+    Continuous Delivery
+    Configuration Management
+    Maintainability
+    Extensibility
+    Custom Code Integration
+    Pace of Development
+    Hardware Access
+    Platform Functionality
+    Connected Devices
+    Input Heterogeneity
+    Output Heterogeneity
+    App Life Cycle
+    System Integration
+    Security
+    Robustness
+    Degree of Mobility
+    Look and Feel
+    Performance
+    Usage Patterns
+    User Authentication
+
+\subsection{Web Compatibility}
+This criterion examines the framework's compatibility with various web browsers (Chrome, Firefox, Edge, Safari, etc.) and its ability to ensure that apps function as intended across them. The consideration of differing browser specifications, compatibility issues, and features is vital for cross-platform web development.
