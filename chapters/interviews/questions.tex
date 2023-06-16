@@ -1,0 +1,115 @@
+\chapter{Interview}
+\section{Categorized Questions}
+
+\subsection{Infrastructure}
+
+\begin{itemize}
+  \item License: 
+    \begin{itemize}
+      \item Should the use of third-party libraries be taken into account when considering the licensing/cost structure of a framework? For Kotlin Multiplatform for example, you'll need some kind of library or framework to develop for web.
+    \end{itemize}
+  \item Target Platforms:
+    \begin{itemize}
+      \item In addition to the mentioned mobile platforms, what other platforms should we consider when developing for web? Are there any beside web browsers? 
+      \item What browser-specific considerations should be taken into account during development?
+    \end{itemize}
+  \item Monetization:
+    \begin{itemize}
+      \item Considering web applications, how does the lack of a centralized store (like Google Play or Apple App Store) affect the implementation of in-app purchases or subscriptions? What alternative methods or strategies are commonly used for this purpose in web applications?
+    \end{itemize}
+\end{itemize}
+
+\subsection{Development}
+
+\begin{itemize}
+  \item User Interface Design:
+    \begin{itemize}
+      \item How does the lack of standardized form factors and the variety of viewing environments (like different browsers, screen resolutions, and devices) in web development impact the UI design process compared to mobile applications?
+      \item What significance does a What You See is What You Get (WYSIWYG) Editor hold in the context of designing web applications?
+      \item When evaluating a web development framework, how significant is its capability to create responsive websites that optimize viewing and interaction experiences across a variety of devices?
+      \item How do considerations for accessibility and usability standards (like WCAG) factor into UI design for web applications within cross-platform frameworks?
+    \end{itemize}
+  \item Testing:
+    \begin{itemize}
+      \item Are there unique challenges or considerations in simulating user scenarios, considering factors like various browsers, browser versions, and different screen sizes?
+      \item Could you speak to the tools and techniques commonly used for monitoring web applications at runtime? How do they provide developer console, error reporting, and logging functionalities for app-specific and system events?
+      \item How does remote debugging work in the context of web applications? Are there any specific tools or techniques that are useful for testing in a more realistic environment as opposed to using emulator environments for web-based applications?
+    \end{itemize}
+  \item Continuous Delivery:
+    \begin{itemize}
+      \item Could you talk about how frameworks may support web app deployment? What kinds of build services or cloud-based approaches are commonly used?
+      \item In the context of continuous delivery platforms for web apps, how do they automate building, testing, and deploying?
+      \item How does continuous integration work for web applications, particularly in the context of automatically publishing updated versions? Is there a standard practice similar to app store integration for mobile apps?
+    \end{itemize}
+  \item Configuration Management:
+    \begin{itemize}
+      \item How do developers manage different versions or packages of web applications to cater to different user types (roles), themes or regional peculiarities?
+    \end{itemize}
+\end{itemize}
+
+\subsection{App}
+
+\begin{itemize}
+  \item Access to Hardware:
+    \begin{itemize}
+      \item What are the limitations or challenges in accessing device-specific hardware features like sensors (e.g., camera, microphone, GPS) for web applications?
+      \item How do web applications deal with the variations in hardware across different user devices, given that web apps are accessed through a wide array of devices and browsers?
+      \item What types of device hardware features are typically inaccessible or restricted for web-based applications, and how does this impact the development and user experience?
+    \end{itemize}
+  \item Functionality of the Platform:
+    \begin{itemize}
+      \item How does distribution to web handle platform-specific functionalities like access to a persistence layer, file system, network connection information, and battery status?
+      \item How does the platform-specific functionality of web applications vary across different browsers and operating systems?
+    \end{itemize}
+  \item Connected Devices:
+    \begin{itemize}
+      \item In the context of mobile applications, supporting a variety of connected devices is crucial. How does this concept translate to web application development, and what specific considerations need to be taken into account when dealing with connected devices in a web environment?
+    \end{itemize}
+  \item Input/Output Heterogeneity:
+    \begin{itemize}
+      \item Considering the varied input methods available for mobile devices (such as touch screens, voice recognition, hardware buttons), how does the scenario change when designing for the web?
+      \item How can we ensure that our web applications can cater to a diverse range of user inputs?
+      \item Output device heterogeneity is a significant aspect of mobile application development due to different screen sizes, resolutions, color palettes, etc. How can we manage this diversity when deploying our applications on the web, given the wide range of devices and display capabilities users might have?
+    \end{itemize}
+  \item Application life cycle:
+    \begin{itemize}
+      \item In contrast to the life cycle of a mobile application, what are the major differences or similarities when considering the life cycle of a web application?
+      \item How should the different states (starting, pausing, continuing, exiting) be managed in a web environment?
+      \item Mobile apps often have to manage continuously running background services and notifications. How can web applications provide similar functionalities given the differences in execution environments?
+    \end{itemize}
+  \item Security:
+    \begin{itemize}
+      \item Confidentiality is a key aspect in both web and mobile app development. In the context of web development, how can access permissions be managed effectively?
+      \item From an integrity perspective, how can web applications ensure data security during transfer and storage?
+      \item Considering the prevention of security breaches like code injections and cross-site request forgery, what tools and methods should web developers use that might differ from those in mobile app development?
+    \end{itemize}
+  \item Robustness:
+    \begin{itemize}
+      \item In the case of web applications, how can intelligent fallback mechanisms be implemented when specific features are unsupported or restricted?
+      \item How can web development frameworks facilitate the creation of robust applications, particularly in terms of fault tolerance and resilience in low or no internet connectivity situations?
+    \end{itemize}
+  \item Degree of Mobility:
+    \begin{itemize}
+      \item When it comes to creating a responsive web application, how would the degree of mobility (stationary, mobile, wearable, autonomous) impact the development process and the choice of web technologies?
+    \end{itemize}
+\end{itemize}
+
+\subsection{Usage}
+
+\begin{itemize}
+  \item Look and Feel:
+    \begin{itemize}
+      \item What challenges might web developers face in ensuring a consistent look and feel across different browsers and devices, and how can these be addressed?
+      \item Is the seamless synchronization of app data across multiple devices, a common feature in mobile apps, equally significant for web applications, and what challenges might arise in its implementation?
+    \end{itemize}
+  \item Usage Patterns:
+    \begin{itemize}
+      \item To what extent are the usage patterns typically seen in mobile apps, such as the 'instant on' experience and data availability during connectivity loss, also relevant for web applications?
+      \item What behaviour do users expect from web applications in this context?
+    \end{itemize}
+  \item User Authentication:
+    \begin{itemize}
+      \item User authentication plays a crucial role in ensuring the security and personalized experience of digital platforms. What are the current standards for user authentication across different devices, and especially in web applications?
+      \item Given the importance and diversity of authentication methods in mobile applications (pins, passwords, gestures, biometric information, voice recognition), how can web applications effectively incorporate these standards to provide a seamless and secure user experience across various devices?
+    \end{itemize}
+\end{itemize}
