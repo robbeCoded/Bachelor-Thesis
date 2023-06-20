@@ -26,14 +26,16 @@ Definition and significance of cross-platform development
 - A lot of scientific literature on framework evaluations for specific aspects (file system access, performance,...)
 - A lot of literature on framework comparisons, but without a unified way of comparison
 
-## 3.1 Rieger and Majchrzak
-- Comprehensive, exhaustive and well defined criteria catalogue for cross-platform app development frameworks
-- Catalogue works for "app-enabled" devices
-- Modern frameworks allow for building applications for mobile, desktop and web at once
-- Kotlin Multiplatform offers cross-platform in a new and unique way => need to revise some of the criteria
-- Need for catalogue that can evaluate frameworks on their web capabilities as well
+## 3.1 Evaluation of Cross-Platform Development Approaches for app-enabled Devices
+- Seminar work of Heitkötter et. al
+- Rieger and Mejchrzak:
+  - Comprehensive, exhaustive and well defined criteria catalogue for cross-platform app development frameworks
+  - Catalogue works for "app-enabled" devices
+  - Modern frameworks allow for building applications for mobile, desktop and web at once
+  - Kotlin Multiplatform offers cross-platform in a new and unique way => need to revise some of the criteria
+  - Need for catalogue that can evaluate frameworks on their web capabilities as well
 
-## 3.2 Criteria to evaluate web development frameworks
+## 3.2 Evaluation of Web Development Approaches
 
 # 4. Revised set of criteria to evaluate modern cross-platform frameworks with web development capabilities
 - Explain which criteria need to be updated
