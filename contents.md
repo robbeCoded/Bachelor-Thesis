@@ -36,13 +36,17 @@ Definition and significance of cross-platform development
   - Need for catalogue that can evaluate frameworks on their web capabilities as well
 
 ## 3.2 Evaluation of Web Development Approaches
-
+### 3.2.1 The landscape of web development
+### 3.2.2 Evaluation of Particular Aspects of Web Development Approaches
+### 3.2.3 Existing Evaluation Criteria
+### 3.2.4 Comparing JavaScript Frameworks/Libraries
 # 4. Revised set of criteria to evaluate modern cross-platform frameworks with web development capabilities
 - Explain which criteria need to be updated
 - Which criteria need to be added based on literature from 3.2 and expert interviews
 - Present the revised criteria catalogue
 
 # 5. Evaluation of Kotlin Multiplatform for Cross-Platform Development of Mobile/Android and Web Applications
+- very different results depending on if you evaluate KMP with Compose Multiplatform or Native front-end
 Survey of how developers would evaluate Kotlin Multiplatform with the revised criteria catalogue
 - Analyze Survey
 - Present findings
