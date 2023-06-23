@@ -1,121 +1,7 @@
-\section{Evaluation framework for cross-platform app
-development approaches}
+\section{Evaluation of Cross-Platform Development Approaches for app-enabled Devices}
+The surge in popularity of cross-platform development over the last decade, particularly within the mobile device sector, has led to a substantial body of scientific literature dedicated to exploring this topic. A large number of these studies focus on comparing specific features of development frameworks, such as their performance, access to device sensors, or memory usage. Meanwhile, other researchers are committed to developing comprehensive and exhaustive evaluation methods that enable a thorough comparison of existing development frameworks.
 
-Rieger and Majchrzak determined a list of criteria for evaluating cross-platform app development frameworks through a combination of literature review and consultation with experts. They conducted a systematic review of existing evaluation frameworks and studies as well as a survey of field experts. The outcomes of these efforts were used to develop an initial set of criteria, which was then refined through additional consultation with and input from subject matter experts. Case studies and expert evaluation were then used to confirm the final set of criteria.
-This section provides an overview of the final criteria and concise explanations for each.
-
-\subsection{License} 
-This criterion emphasizes the significance of contemplating a cross-platform framework's license, especially for commercial development. It recognizes that license terms can have implications not only for the developed applications but also for the framework itself. It suggests evaluating the permissiveness of the license, the framework's long-term viability, and the associated pricing model. Open-source frameworks usually get distributed free of charge under a variety of permissive regulations, whereas premium alternatives may charge for maintenance and consulting services.
-
-\subsection{Target Platforms} 
-This criterion emphasizes the importance of evaluating a cross-platform framework's supported target platforms. With Android and iOS dominating the smartphone and tablet markets, it is essential to support these platforms. Nevertheless, expanding cross-platform app development to other device categories can also increase the number of desirable platforms. It acknowledges that various versions of a platform may introduce substantial differences, and that developing for them may resemble developing for distinct platforms. The criterion recognizes the significance of supporting novel features utilized by flagship devices to reach early consumers, as well as taking into account the update behavior and capabilities of different devices in different markets. In addition, the significance of supporting combined apps that span multiple device classes, such as second-screen apps and companion apps for smartphones and smartwatches, is emphasized.
-
-\subsection{Development Platforms} 
-This criterion focuses on the development platforms a cross-platform framework supports. It recognizes that developers may use a variety of programming languages and development environments, and the framework must support interoperability and flexibility in articulating custom business logic and advanced configurations. It suggests evaluating the hardware and software options as well as the ability to integrate with additional app development tasks, such as UI and UX design.
-
-\subsection{Distribution Channels} 
-Distribution channels refer to the platform- or vendor-specific app stores, such as the Apple App Store and Google Play, from which consumers acquire new applications. It is essential for a cross-platform framework to support a wide range of relevant app stores, as not all app types can be uploaded to every store. Additionally, framework compatibility with app store restrictions and submission regulations varies, and some well-integrated frameworks may offer additional features such as app rating and update rollout support.
-
-\subsection{Monetization}
-Monetization refers to the diverse methods by which applications can generate revenue. Paid apps, freemium apps (free with in-app purchases for additional features), paidmium apps (paid installations with in-app purchases), in-app advertising, and free apps serving a specific business purpose are potential monetization models. Frameworks may provide varying degrees of support for these monetisation models, with excellent support including interfaces to payment providers, pre-designed functionality for in-app payments, support for various types of advertisements, and access to advertising networks.
-
-\subsection{Internationalization}
-This criterion relates to the global distribution and usability of an application or platform. It addresses the need for localization and internationalization of applications in order to accommodate linguistic and cultural differences. This may include translation capabilities, multiple language support, and conversion tools for localized content such as dates, currencies, and units. Legal and geographical restrictions that prohibit the app from being distributed in certain regions are also taken into account during internationalization.
-
-\subsection{Long-term Feasibility}
-This concerns the strategic decision to select an app development methodology and the multi-year commitment. The initial investment may be substantial and technological lock-in may be a concern, especially for small businesses. The framework's maturation, stability, and activity can be utilized to assess its long-term viability. The criterion also takes into account the reputation of the stakeholders supporting the framework, the potential for technological advancements, and the availability of commercial "premium support."
-
-\subsection{Development Environment}
-This refers to the maturation and feature-richness of app development integrated development environments (IDEs). With features such as auto-completion, integrated library documentation, debuggers, and emulators, a decent IDE increases productivity. If the framework does not mandate a particular IDE, developers can work in their preferred procedures, thereby reducing the initial setup effort.
-
-\subsection{Preparation Time}
-Preparation Time addresses how quickly and effectively a developer can pick up a new framework. It considers the necessary technology stack, the quantity and variety of supported programming languages, and the familiarity of programming paradigms. A low barrier to entry, comprehensive API documentation, guides, tutorials, and code examples make a framework more accessible and simpler to learn.
-
-\subsection{Scalability}
-Scalability emphasizes an app's or platform's capacity to effectively manage the growth of users and functionality. It involves the correct modularization and structuring of the app's subcomponents and architectural considerations, which can make the development process more efficient and enable the addition of more developers as the app's functionality expands.
-
-\subsection{Development Process Fit}
-This criterion relates to the development framework's compatibility with various software development methodologies (such as Waterfall, Agile, etc.). It is necessary for the framework to be adaptable to specific software development techniques. This criterion also evaluates the effort required to produce a minimum viable product and the framework's support for scalability and modularity in relation to the development methodology.
-
-\subsection{UI Design}
-This relates to the significance of UI design in user-centered application development. The criterion takes into account the difficulties posed by diverse device hardware and the need for UI designs that are adaptable to different screen sizes. It also discusses the utility of WYSIWYG editors for designing interfaces for multiple devices and the need for platform-appropriate designs to be supported.
-
-\subsection{Testing}
-This criterion emphasizes the need for comprehensive testing of all app components, including UI, business logic, and others. For more realistic test results, the necessity of considering mobile-specific scenarios and simulating external influences, providing meaningful error reporting and logging capabilities, and facilitating remote debugging is addressed.
-
-\subsection{Constant Delivery}
-Constant Delivery emphasizes the significance of life cycle support that extends beyond testing to deployment. A good framework will facilitate deployment by possibly supporting the generation of native applications, signed packages, and even assisting with their deployment to devices or app stores. Especially for agile development, continuous delivery platforms that automate the construction, testing, and deployment of an application can be advantageous. In addition to continuous app store integration, the framework may also offer advanced build options.
-
-\subsection{Configuration Management}
-This criterion concentrates on the framework's ability to handle various configurations of the application, including multiple roles (user and administrator), theming/branding variations, and regional distinctions. It evaluates the framework's support for providing various app packages for different versions or dynamically switching between versions without reinstalling the app.
-
-\subsection{Maintainability}
-Maintainability addresses the efficiency of codebase maintenance over time. Maintainability can be difficult to quantify, but code readability, design pattern usage, in-code documentation, and familiarity with the framework's programming paradigms and practices all play a role. Also considered are the reusability of source code across projects and the portability to other software projects.
-
-\subsection{Extensibility}
-This evaluates the capability of the framework to extend its functionality beyond the provided features. It determines whether custom components and third-party libraries can be added to satisfy project-specific needs. This includes extensions for the user interface, access to device features, and common task libraries.
-
-\subsection{Custom Code Integration}
-Custom Code Integration relates to the app's capacity to incorporate native code or third-party libraries, even within a cross-platform development framework. It acknowledges that there may be instances where certain functionalities cannot be accomplished through extensions alone, necessitating access to platform-specific APIs or the ability to reuse existing native code.
-
-\subsection{Acceleration of Development}
-This values the speed and effectiveness of development with the framework. The cost and return on investment of the development process are affected by factors like the amount of boilerplate code required, the availability of predefined functionality for common requirements, and the overall development pace.
-
-\subsection{Access to Hardware}
-Access to Hardware emphasizes on the framework's access to and utilization of mobile devices' hardware features. It takes into account support for various sensors, cameras, GPS, accelerometers, and other device-specific capabilities that contribute to the app's versatility and functionality.
-
-\subsection{Functionality of the Platform}
-This criterion evaluates the framework's support for gaining access to platform-specific features, such as file system access, database storage, network connection information, battery status, and in-app browser support. It also considers the capacity to add complex business logic to the application using general-purpose programming languages.
-
-\subsection{Connected Devices}
-This evaluates the framework's support for interacting with and making use of connected devices, such as wearables, sensor/actuator networks, and other devices. It evaluates the framework's capacity to access the data, sensors, and capabilities of connected devices, as well as the availability of additional UI components, if pertinent.
-
-\subsection{Input Heterogeneity}
-Heterogeneity addresses the wide variety of input methods available on mobile devices, such as keyboards, touch displays, hardware buttons, voice recognition, and gestures. It emphasizes that cross-platform frameworks should give developers access to these input methods, take device-specific input limitations into account, and respect platform-specific input patterns.
-
-\subsection{Output Heterogeneity}
-Outcome Heterogeneity focuses on on the wide range of output options offered by mobile devices, including various screen sizes, resolutions, formats, color palettes, frame rates, and opacity levels. It recognizes the difficulties associated with adapting to device-specific output capabilities and the need to manage context changes, such as day/night screen mode.
-
-\subsection{App Life Cycle}
-This criterion stresses the significance of supporting the various stages of an app's life cycle, such as launching, halting, continuing, and closing. Multithreading, background services, and notifications that extend the app's conditions beyond the graphical user interface are also considered.
-
-\subsection{System Integration}
-System Intergration focuses on the framework's ability to integrate with backend systems, support data exchange protocols and formats, facilitate inter-app communication, and support workflow-oriented use cases. In addition, it accentuates the importance of customization options that align with corporate identities or design guidelines.
-
-\subsection{Security}
-This addresses the framework's support for ensuring the confidentiality, integrity, and control of app data. It includes the management of access permissions, the encryption of sensitive data, the use of secure data transmission protocols, and the prevention of security vulnerabilities.
-
-\subsection{Robustness}
-This criterion emphasizes that applications must effectively manage unsupported or restricted features and include fallback mechanisms. It also takes into account fault-tolerant and resilient mechanisms, such as resolving denied permissions, deactivated sensors, and poor or nonexistent internet access. Examples include offline capabilities and data caching for synchronization.
-
-\subsection{Mobility Level}
-This acknowledges that various applications have varying degrees of mobility needs that extend beyond infrastructure considerations. It divides applications into four mobility categories: stationary, mobile, wearable, and autonomous. The criterion emphasizes that the app's functionality and features must adapt to the user's mobility level, taking into account context information, personal preferences, and self-adaptation capabilities.
-
-\subsection{Look and Feel}
-This emphasizes that the user interface elements provided by a cross-platform framework should have a native appearance and feel. It suggests evaluating elements, views, and interaction options in accordance with platform vendors' human interface guidelines. The criterion recognizes that form-based interfaces tend to be easy to implement, whereas richer interfaces with 2D animations, 3D environments, and multimedia capabilities can be more difficult for cross-platform frameworks.
-
-\subsection{Performance}
-Performance of the application is significant for user acceptance. It includes aspects such as app load time, user interaction responsiveness, perceived network access speed, and stability. Start-up time, wake-up time after interruptions, shutdown time, CPU load, memory usage, battery depletion, and download size are objective performance metrics that can be evaluated. The criterion emphasizes the importance of carefully harmonizing performance aspects, as a singular focus on performance may negatively affect other criteria, and optimizing for other criteria may affect performance.
-
-\subsection{Usage Patterns}
-This criterion recognizes that applications are utilized in recurring patterns and should align with user expectations and workflows. It involves providing a "instant on" experience, preserving unsaved data after app termination or device reboot, maintaining data availability during temporary loss of connectivity, integrating with common apps for interaction and sharing, supporting data synchronization across multiple devices, and leveraging platform-wide services such as notification centers and document storage.
-
-\subsection{User Authentication}
-The last criterion, User Authentication, emphasizes the growing significance of user management in mobile applications, from local single-user scenarios to cloud accounts with multi-device account management and role-based access privileges. It addresses user authentication methods, session management, preserving login information, and the requirement for frameworks to provide multiple authentication options, including traditional PINs, passwords, gestures, biometric information, and voice recognition. The criterion emphasizes the importance of user authentication from the user's perspective and its impact on the functionality and security of the application.
-
-\section{Evaluation of Web Development Frameworks}
-Now that a foundational understanding of the Rieger and Majchrzak criteria for evaluating cross-platform app development approaches has been established, it is time to examine how Web Development Frameworks have been evaluated in the past. 
-
-In discussing the broad realm of web development, it is essential to highlight the sheer diversity of approaches that can be adopted, depending on specific requirements and objectives. Depending what's needed, websites range from a static HTML website, to the complexity of dynamic web applications that handle large amounts of data and offer robust interactivity.
-Just as there is a wide range in the complexity of web solutions, there are likewise many web development approaches to consider. For static websites, developers might choose to code HTML, CSS, and JavaScript manually or use a static site generator like Jekyll or Hugo. For more interactive and dynamic websites, developers can leverage server-side scripting languages such as PHP, Python (with frameworks like Django or Flask), Ruby (on Rails), or JavaScript with Node.js.
-Modern web applications often involve a combination of both server-side and client-side development. On the client side, JavaScript frameworks like React, Angular, and Vue.js are popular choices for building interactive user interfaces. Additionally Progressive Web Apps (PWAs) offer a new way of delivering a user experience similar to native mobile apps trough a web application.
-In the context of this thesis, the focus will primarily be on the front-end capabilities of web development approaches. This is because modern cross-platform development frameworks primarily focus on providing robust, reusable solutions for front-end development.
-
-A lot of literature is dedicated to evaluate certain aspects of a given web development framework. 
-https://ieeexplore.ieee.org/abstract/document/9959901, bla, bla 
-evaluate the performance of popular web development frameworks. 
-
-Comparison of Mobile Web Frameworks by Heitkötter et. al. is a highly influential paper in the sphere of evaluation frameworks. Their research defined a set of criteria which is split into two different categories:  Developer criteria and User criteria. 
+The research of Heitkötter et. al, a seminal work in the sphere of evaluation frameworks, proposed a two-fold set of criteria based upon different perspectives on app development:
 \begin{itemize}
     \item Developer Criteria
     \begin{itemize}
@@ -134,66 +20,34 @@ Comparison of Mobile Web Frameworks by Heitkötter et. al. is a highly influenti
         \item Runtime Performance
     \end{itemize}
 \end{itemize}
-Since Rieger and Majchrzak's catalogue is partly based on this research, every criterion defined by the Heitkötter et. al, along with its respective description, finds an analogous counterpart in the criteria catalog by Rieger and Majchrzak. While Heitkötter et al. criteria continue to be influential in evaluating development frameworks, it's important to underscore that they are not entirely suited to asses contemporary web development frameworks. The criteria and their respective descriptions are intentionally vague and more importantly based on technologies from almost a decade ago.
+These criteria continue to influence evaluation frameworks for development approaches, yet they may not fully capture the nuances of contemporary cross-platform development approaches due to their intentional vagueness and foundation on decade-old technologies. 
 
-
-Del Salas-Zarate et al. have compiled a list of best practices for web application development. They define best practices as the most effective, widely-adopted, and consistently refined methods of achieving desired outcomes. The list was created by gathering the most relevant engineering practices present in the development community 2015. This was done by examining best practices reported in studies of web frameworks featured in various books and the broader web development community. The practices selected are those that enable three crucial quality criteria for the success of web applications: reliability, usability, and security. This is their list:
+Upon reviewing extensive literature, Rieger and Majchrzak identified two key observations: firstly, most early research in the field considered only a limited set of criteria and often overlooked certain aspects of cross-platform development; secondly, the criteria used appeared inconsistent over time, lacking a clear categorization scheme, comprehensive explanations, and measurable metrics.
+Building upon Heitkötter et. al's work and their own prior research, they developed a comprehensive list of evaluation criteria for cross-platform app development approaches through a combination of literature review and expert consultation. This process resulted in an initial set of criteria, which was later refined with additional expert input. The criteria are grouped based on four distinct perspectives: Infrastructure, Development, App, and Usage.
 \begin{itemize}
-  \item AJAX Support
-  \item Cloud Computing
-  \item Comet Support
-  \item Custom Error Messages
-  \item Customization and Extensibility
-  \item Debugging
-  \item Documentation
-  \item Forms Validation
-  \item HTML5 Support
-  \item Internationalization
-  \item JavaScript-based Frameworks Support
-  \item Object-Relational Mapping (ORM)
-  \item Parallel Rendering
-  \item Platform Support
-  \item REST Support
-  \item Scaffolding
-  \item Security
-  \item SiteMap
-  \item Template Framework
-  \item Testing
-  \item Use actors
-  \item Use Lazy Loading
-  \item Use Pattern Matching
-  \item Wiring
+    \item \textbf{Infrastructure:} This perspective focuses on the preconditions and subsequent implications of using a cross-platform app development framework.
+    \item \textbf{Development:} This viewpoint assesses the framework's utility in app development. This perspective is largely technical and covers criteria that software engineers and programmers would typically look for in a framework.
+    \item \textbf{App:} This perspective evaluates the success of the development process based on the capabilities of the resulting app. It considers whether the framework provides near-native support for device features, allowing versatile and straightforward access. It also incorporates business considerations relating to the app as a product, such as security.
+    \item \textbf{Usage:} Finally, the usage perspective examines the non-functional aspects of the app that contribute to the overall user experience. This includes the app's performance, user-friendliness, aesthetics, ergonomics, and efficiency.
 \end{itemize}
+While the list developed by Rieger and Majchrzak stands as the most exhaustive and comprehensive catalogue to date, it's designed primarily for "app-enabled" devices, which limits its scope. Recognizing this limitation, the forthcoming research aims to broaden its applicability by not only utilizing and building upon their existing framework, but also by extending its scope to enable the evaluation of cross-platform development frameworks for "app-enabled" devices and web applications.
 
-The best practices outlined by Del Salas-Zarate et al. show a considerable overlap with the criteria catalog by Rieger and Majchrzak, with several best practices (Platform Support, Internationalization, Security, Testing and Debugging, Documentation) having direct equivalents. Other best practices can be aligned with criteria in Rieger and Majchrzak's catalog due to their similar content and objectives. AJAX Support, Parallel Rendering and Use Lazy Loading for instance, can be attributed to Performance. Template Framework (a way to reduce boilerplate code) can be attributed to Acceleration of Development.
-While the mentioned best practices HTML5 Support, Comet Support, Use Actors, and Use Pattern Matching may not be explicitly present in Rieger and Majchrzak's catalog, the underlying concepts they represent, such as embracing modern web technologies, efficient real-time communication, leveraging parallel processing, and adopting concise and maintainable business logic, are still relevant and valuable in contemporary web development practices.
-The best practices Forms Validation, ORM and SiteMap highlight the need to update certain criteria descriptions or add new criteria to Rieger and Majchrzak's catalog. Forms Validation for instance is something most modern web development frameworks, like React, Vue.js, or Angular, provide mechanisms for. ORM is crucial to interact with Databases and SiteMap, while in modern web applications often not visible to the end user, contributes to the design and development process and to Search Engine Optimization.
 
-Kaluza et. al contributed a set of criteria to compare back-end frameworks for web application development. Their list of criteria was influenced by the work of Matt Raible. They define the following criteria: 
-\begin{itemize}
-    \item Code generator
-    \item Project Health
-    \item Developer's perception
-    \item Developer's availability
-    \item Business trends
-    \item Templates
-    \item I18n and I10n (Internationalization)
-    \item Testing
-    \item Validation
-    \item Mobile phone / IPhone support
-    \item Licensing
-    \item The possibility of integration with third-party solutions
-    \item Multi-language support (Programming Languages)
-    \item Plugins/add-ons
-    \item Customized for large applications
-    \item High Scalability
-    \item Adapted to beginners
-    \item Good for business applications development
-    \item Rapid prototype development
-    \item A growing Google Trend
-    \item Points by Haker News users
-    \item Points by Reddit users
-    \item Start Rating on GitHub
-    \item The number of Stack Overflow tags
-\end{itemize}
-While many of the listed criteria are again analogously already included in the catalogue by Rieger and Majchrzak some provide valuable insight how the evaluation framework might be expanded. Mobile phone / iPhone support is considered quite narrowly by Kaluza et. al, as they primarily focus on the presence or absence of this feature. However, this criterion could serve as a potential extension to Rieger and Majchrzak's framework in a broader sense, such as examining how well the developed websites function in mobile browsers. While not strictly related to the technical aspects of web development, Kaluza et. al. interestingly include 'Developer's Availability' as a criterion. This consideration is vital for firms when selecting a framework, as it is important to ensure that there is a sufficient pool of developers available who are proficient in the chosen framework. The 'Project Health' criterion, as described by Kaluza et. al, offers a unique perspective on the vitality and activity surrounding a given framework. It measures the extent of discussion, usage, and resources available online, such as the number of books, tags on StackOverflow, and the quality of official documentation. This criterion reflects the recognizability and popularity of a framework, which can indicate its longevity and continued development. A well-known framework with many resources available is likely to have a larger user base, more support, and a longer lifespan. This can be a crucial consideration for firms when deciding on a framework, as it provides insight into the framework's stability, the availability of support and resources, and the level of community engagement.
+
+
+Nawrocki et al. provide valuable insights into the performance and ease of development of mobile applications using native and cross-platform frameworks (Flutter, Xamarin and React Native). They conducted a thorough comparison of these two approaches, focusing on metrics such as CPU and RAM usage, application size, launching time, and the ease of implementation. Their findings offer a detailed understanding of how these frameworks perform in these specific areas, which can be crucial for developers when choosing a technological solution for mobile application development. However, it's important to note that while these factors are significant, they are not the only criteria that should guide the decision-making process.
+
+
+
+
+
+Related work chapter: 
+- cross-platform mobile evaluation that lead to the catalogue by r and m
+- paper by r and m 
+- other cross-platform mobile evaluation approaches
+
+- web evaluation
+- criteria "meta-study"
+
+- evaluations of Kotlin multiplatform
+

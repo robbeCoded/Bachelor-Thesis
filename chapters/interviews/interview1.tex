@@ -1,0 +1,146 @@
+Interview mit: Lukas Adler
+Qualifikation: 
+Bachelor und Master Wirtschaftsinformatik an der Universität Mannheim.
+Für Master Angular gelernt. Masterthesis bei CGI.
+Hivi im Java Umfeld mit u.a. Spring u. Spring Boot, viel backend.
+Dann Acando als Consultant.
+Aktuell im front-end lead im Projekt mit Angular. Back-end mit Spring Boot.
+Feature Entwicklung, Architektur Entwürfe, etc.
+
+Criteria: 
+
+License: 
+directly applicable
+
+Target Platforms: 
+modifications necessary: 
+- Browser as target platform. Different browsers have certain specifics.
+- For the target platforms like mobile, windows, mac etc. the browsers should be supported.
+
+Supported development platforms: 
+directly applicable
+
+Distribution channels:
+modifications: 
+- deployment on web server, framework can have built in support for deployment
+- less of a concern for web because there are no concise distribution channels like in mobile with google play and app store
+
+Monetization: 
+terminology update
+
+Internationalisation: 
+directly applicable
+
+Long-term Feasibility: 
+directly applicable
+
+Development Environment:
+directly applicable
+
+Preparation Time: 
+directly applicable
+
+Scalability: 
+directly applicable but more important for back-end than front-end
+
+Development process fit: 
+directly applicable but less of a concern because regular frameworks mostly fit all development processes
+
+UI Design: 
+modifications: 
+- usually development takes place directly in the browser
+- no WYSIWYG editor needed, but fast building inside the browser relevant
+
+Testing: 
+modifications: 
+- testing in all relevant browsers important, especially with html/css that gets interpreted differently in various browsers
+- external influences less of a concern
+- one example might be that adds should pause while the user tabs into a different tab
+
+Continuous Delivery: 
+modifications: 
+- CI platform can be connected to an artifactory
+- container can be placed inside kubernetes
+
+Configuration Management: 
+directly applicable (except static websites)
+
+Maintainability: 
+directly applicable
+
+Extensibility:
+directly applicable
+
+Integrating custom code: 
+directly applicable but native code less of a concern for web.
+
+Pace of development: 
+directly applicable
+
+Access to device-specific hardware:
+not very relevant in web development. very restricted in accessing device specific hardware.
+
+Access to platform-specific functionality: 
+Less relevant in web. Access is dependent on the browser. Thr browser will determine the access to storage etc.
+Access to the local file system will be through the browser.
+
+Support for Connected Devices: 
+Not very relevant in web development
+
+Input device heterogeneity: 
+Less input possibilities in web. mostly touch, mouse and keyboard.
+
+Output device heterogeneity:
+mostly differing screen sizes.
+
+Application life cycle:
+not very relevant in web. 
+maybe if for example a website wants to register that the tab is currently not active, certain tasks might be paused. 
+the browser does a lot of the work for us.
+
+System integration: 
+applicable to web. mostly http communication in web.
+
+Security:
+modifications:
+differentiate between front-end and back-end. 
+data validation, sql injections etc.
+https very important. for seo also.
+
+Robustness:
+update terminology. 
+naive option in web to show failure site.
+
+Degree of mobility:
+not really relevant for web.
+maybe offline functionality if the web app is regulary used on the go.
+but in general website work when there is an internet connection.
+
+Look and feel:
+not as relevant for web. There are certain guidelines for how to design for web, but the website doesnt aim to look different in safari or chrome etc.
+
+Performance: 
+modifications: 
+content delivery network. website is spread across different servers so it is accessible from all over the world. 
+battery drain not as much of a concern but network usage for example very important. 
+
+Usage patterns:
+modifications: 
+website load times are short, website is übersichtlich, feedback for inputs. 
+
+User authentication: 
+modifications:
+authentication via cookies or jwt. information from web server will only come back when the user is autheticated. 
+web specific authentication: classic email and password, single sign on or two factor. key files, social login via facebook, google etc.
+
+
+Missing:
+- Search Engine Optimization
+- Accessibility
+
+
+
+
+ 
+
+
