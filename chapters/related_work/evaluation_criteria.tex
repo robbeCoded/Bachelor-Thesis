@@ -1,9 +1,9 @@
 \section{Evaluation of Cross-Platform Development Approaches for app-enabled Devices}
 The surge in popularity of cross-platform development over the last decade, particularly within the mobile device sector, has led to a substantial body of scientific literature dedicated to exploring this topic. A large number of these studies focus on comparing specific features of development frameworks, such as their performance, access to device sensors, or memory usage. Meanwhile, other researchers are committed to developing comprehensive and exhaustive evaluation methods that enable a thorough comparison of existing development frameworks.
 
-The research of Heitkötter et. al, a seminal work in the sphere of evaluation frameworks, proposed a two-fold set of criteria based upon different perspectives on app development:
+The research of Heitkötter et al. \cite{Heitkotter.2013}, a seminal work in the sphere of evaluation frameworks, proposed a two-fold set of criteria based upon different perspectives on app development:
 \begin{itemize}
-    \item Developer Criteria
+    \item \textbf{Developer Criteria}
     \begin{itemize}
         \item License and Cost
         \item Learning Effort
@@ -13,7 +13,7 @@ The research of Heitkötter et. al, a seminal work in the sphere of evaluation f
         \item Adaptability
         \item Maintainability
     \end{itemize}
-    \item User Criteria
+    \item \textbf{User Criteria} 
     \begin{itemize}
         \item Inherent Look and Feel
         \item Load Time
@@ -22,22 +22,20 @@ The research of Heitkötter et. al, a seminal work in the sphere of evaluation f
 \end{itemize}
 These criteria continue to influence evaluation frameworks for development approaches, yet they may not fully capture the nuances of contemporary cross-platform development approaches due to their intentional vagueness and foundation on decade-old technologies. 
 
-Upon reviewing extensive literature, Rieger and Majchrzak identified two key observations: firstly, most early research in the field considered only a limited set of criteria and often overlooked certain aspects of cross-platform development; secondly, the criteria used appeared inconsistent over time, lacking a clear categorization scheme, comprehensive explanations, and measurable metrics.
-Building upon Heitkötter et. al's work and their own prior research, they developed a comprehensive list of evaluation criteria for cross-platform app development approaches through a combination of literature review and expert consultation. This process resulted in an initial set of criteria, which was later refined with additional expert input. The criteria are grouped based on four distinct perspectives: Infrastructure, Development, App, and Usage.
+Upon reviewing extensive literature, Rieger and Majchrzak \cite{Rieger.2019} identified two key observations: firstly, most early research in the field considered only a limited set of criteria and often overlooked certain aspects of cross-platform development; secondly, the criteria used appeared inconsistent over time, lacking a clear categorization scheme, comprehensive explanations, and measurable metrics.
+Building upon \cite{Heitkotter.2013} work and their own prior research \cite{Rieger.2016, Rieger.2018}, they developed a comprehensive list of evaluation criteria for cross-platform app development approaches through a combination of literature review and expert consultation. This process resulted in an initial set of criteria, which was later refined with additional expert input. The criteria are grouped based on four distinct perspectives: Infrastructure, Development, App, and Usage.
 \begin{itemize}
     \item \textbf{Infrastructure:} This perspective focuses on the preconditions and subsequent implications of using a cross-platform app development framework.
     \item \textbf{Development:} This viewpoint assesses the framework's utility in app development. This perspective is largely technical and covers criteria that software engineers and programmers would typically look for in a framework.
     \item \textbf{App:} This perspective evaluates the success of the development process based on the capabilities of the resulting app. It considers whether the framework provides near-native support for device features, allowing versatile and straightforward access. It also incorporates business considerations relating to the app as a product, such as security.
     \item \textbf{Usage:} Finally, the usage perspective examines the non-functional aspects of the app that contribute to the overall user experience. This includes the app's performance, user-friendliness, aesthetics, ergonomics, and efficiency.
 \end{itemize}
-While the list developed by Rieger and Majchrzak stands as the most exhaustive and comprehensive catalogue to date, it's designed primarily for "app-enabled" devices, which limits its scope. Recognizing this limitation, the forthcoming research aims to broaden its applicability by not only utilizing and building upon their existing framework, but also by extending its scope to enable the evaluation of cross-platform development frameworks for "app-enabled" devices and web applications.
+While the list developed by Rieger and Majchrzak stands as the most exhaustive and comprehensive catalogue to date, it's designed primarily for "app-enabled" devices, which limits its scope. Recognizing this limitation, the forthcoming research aims to broaden its applicability by not only utilizing and building upon their existing framework, but also by extending its scope to enable the evaluation of cross-platform development frameworks for "app-enabled" devices \emph{and} web applications.
 
 
 
-
+\begin{comment}
 Nawrocki et al. provide valuable insights into the performance and ease of development of mobile applications using native and cross-platform frameworks (Flutter, Xamarin and React Native). They conducted a thorough comparison of these two approaches, focusing on metrics such as CPU and RAM usage, application size, launching time, and the ease of implementation. Their findings offer a detailed understanding of how these frameworks perform in these specific areas, which can be crucial for developers when choosing a technological solution for mobile application development. However, it's important to note that while these factors are significant, they are not the only criteria that should guide the decision-making process.
-
-
 
 
 
@@ -51,3 +49,4 @@ Related work chapter:
 
 - evaluations of Kotlin multiplatform
 
+\end{comment}

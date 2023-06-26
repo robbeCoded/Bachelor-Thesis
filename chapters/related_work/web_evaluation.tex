@@ -1,67 +1,74 @@
 \section{Evaluation of Web Development Frameworks}
 This section will examine how web development frameworks have been evaluated in the past. This will offer insightful perspectives on how the criteria catalogue by Rieger and Majchrzak might be adapted to better suit the evaluation of cross-platform development approaches for 'app-enabled' devices \emph{and} web applications.
 
-
 The landscape of web development is defined by its diversity, with varying approaches shaped by different requirements and objectives. At one end of the spectrum, we have static HTML websites, often built through manual coding or using static site generators like Jekyll or Hugo. At the other end, we find dynamic web applications that offer robust interactivity and handle vast amounts of data.
 
 These dynamic applications typically rely on a mixture of server-side and client-side technologies. On the server side, they may utilize scripting languages such as PHP, Python with Django, Ruby (on Rails), or JavaScript with Node.js and Express.js. On the client side, developers frequently leverage popular JavaScript libraries and frameworks like React, Angular, and Vue.js to create interactive user interfaces.
 
-Additionally, Progressive Web Apps (PWAs) represent a novel approach, aiming to deliver a native-like user experience on mobile devices through web technologies.
+Additionally, Progressive Web Apps (PWAs) represent a relatively novel approach, aiming to deliver a native-like user experience on mobile devices through web technologies.
 \\
 
 
 
-Analogous to the evaluation of cross-platform development frameworks for 'app-enabled' devices, the ever-growing popularity of modern web development frameworks such as Angular, React, Vue.js, among others, has led to a considerable amount of research dedicated to the evaluation and comparison of these frameworks and libraries.
-And analogous a wealth of literature exists that offers various perspectives for evaluating specific aspects of web development frameworks. 
-
-https://ieeexplore.ieee.org/abstract/document/9959901, bla, bla 
-evaluate the performance of popular web development frameworks. 
-
-energy consumption:
-https://dl.acm.org/doi/10.1145/3197231.3197242                                         
-https://link.springer.com/chapter/10.1007/978-3-031-34444-2                                 _18
-
-
-
-While these publications offer valuable insights for decisions that revolve around specific features of a development framework, they hold less relevance within the context of this study.
-A more significant concern is the broader picture of which criteria should be considered when evaluating a development framework.
+Analogous to the evaluation of cross-platform development frameworks for "app-enabled" devices, the ever-growing popularity of modern web development frameworks such as Angular, React, Vue.js, among others, has led to a considerable amount of research dedicated to the evaluation and comparison of these frameworks and libraries.
 The body of literature in this field consists off both scientific publications and a vast number of online articles. These articles, typically authored by programmers for programmers, are geared toward assisting the decision-making process of choosing a framework or library. It's worth noting that the sheer volume of these articles makes it impossible to reference them all. However, despite the wide range of sources, a lot of the content and especially the criteria used to compare the frameworks tend to overlap across these different articles.
 While this section does not constitute a meta-study or survey detailing the most and least utilized criteria in comparing/evaluating web frameworks, the mentioned criteria are arranged loosely based on their frequency of appearance in such comparisons and evaluations.
 
-\\\textbf{Maturity of the Frameworks/Libraries:}
+\textbf{Maturity of the Frameworks/Libraries:}
 One of the most frequently discussed criteria for assessing frameworks and libraries is their stability and reliability, often encapsulated in the concept of 'maturity'. This maturity is commonly influenced by the lifespan of the framework/library, the regularity and quality of its maintenance and updates, and the size and activity level of its developer community.
-Zeinab Khalifa suggest analyzing a framework's history and evolution to predict its future trajectory, as well as examining its popularity in real-world applications as an indicator of its practical utility. The vibrancy and size of the developer community and the ecosystem surrounding the framework provide insights into ongoing innovation and development.
+\cite{Khalifa.2020} suggest analyzing a framework's history and evolution to predict its future trajectory, as well as examining its popularity in real-world applications as an indicator of its practical utility. The vibrancy and size of the developer community and the ecosystem surrounding the framework provide insights into ongoing innovation and development.
 An analysis of the core team size can hint at the level of community support available. The availability of Long-Term Support is crucial for ensuring stability in production applications, as it suggests a commitment to maintaining API compatibility and addressing security vulnerabilities.
-\\\textbf{Longevity and Community Support:}
-As pivotal constituents of a framework or library's maturity, longevity and community support are crucial parameters in assessing a project's health. They provide insights into the durability of the framework or library and the strength of its backing community. As defined by Kaluza et. al, a concept influenced by Matt Raible, a 'healthy' project is characterized by an active developer community and a thriving ecosystem of learning resources. These include active mentions in StackOverflow discussions, vibrant online discourse, and robust, comprehensive official documentation. Jens Neuhaus deepens this understanding by emphasizing the importance of consistent updates and the presence of a supportive developer community, and by highlighting the significance of a rich ecosystem of related tools and libraries. Therefore, a framework or library with a long lifespan, regular reliable updates, engaged community, and an expansive supporting ecosystem, can be considered 'healthy', indicating its suitability for long-term development projects.
-\\\textbf{Performance:}
-Web performance is a critical aspect of web development that focuses on optimizing the speed and responsiveness of websites and applications. Most comparative studies of web development frameworks include some kind of performance metrics, with several focusing exclusively on this aspect(Levlin et. al)(https://blog.logrocket.com/angular-vs-react-vs-vue-js-comparing-performance/). Web performance includes reducing overall load time, making the site usable as soon as possible, ensuring smoothness and interactivity, and optimizing perceived performance. (https://developer.mozilla.org/en-US/docs/Learn/Performance/What_is_web_performance)
-It can be measured using various metrics that are relevant to the users, site, and business goals. These metrics should be collected and measured in a consistent manner and analyzed in a format that can be consumed and understood by non-technical stakeholders. Tripon et. al for instance measured the performance of Angular and Svelte by conducting tests using the Lighthouse tool, which analyzes the application's performance, accessibility, best practices, and SEO.
+\textbf{Longevity and Community Support:}
+As pivotal constituents of a framework or library's maturity, longevity and community support are crucial parameters in assessing a project's health. They provide insights into the durability of the framework or library and the strength of its backing community. As defined by \cite{M.Kaluza.2019}, a concept influenced by \cite{Raible.2007}, a 'healthy' project is characterized by an active developer community and a thriving ecosystem of learning resources. These include active mentions in StackOverflow discussions, vibrant online discourse, and robust, comprehensive official documentation. \cite{Neuhaus.2017} deepens this understanding by emphasizing the importance of consistent updates and the presence of a supportive developer community, and by highlighting the significance of a rich ecosystem of related tools and libraries. Therefore, a framework or library with a long lifespan, regular reliable updates, engaged community, and an expansive supporting ecosystem, can be considered 'healthy', indicating its suitability for long-term development projects.
+\textbf{Performance:}
+Web performance is a critical aspect of web development that focuses on optimizing the speed and responsiveness of websites and applications. Given its significance, it is unsurprisingly the subject of extensive research. Many comparative studies on web development frameworks incorporate performance metrics, with some focusing solely on this dimension \cite{Levlin.2020, Borrelli.2021, Diniz.2022}. Web performance includes reducing overall load time, making the site usable as soon as possible, ensuring smoothness and interactivity, and optimizing perceived performance \cite{Mozilla.2023}.
+It can be measured using various metrics that are relevant to the users, site, and business goals. These metrics should be collected and measured in a consistent manner and analyzed in a format that can be consumed and understood by non-technical stakeholders. \cite{Tripon.2021} for instance measured the performance of Angular and Svelte by conducting tests using Google's Lighthouse tool \cite{Lighthouse.2016}, which analyzes the application's performance, accessibility, best practices, and SEO.
+
+\textbf{Testing:}
+Testing is a critical aspect of (web) development that ensures the reliability, security, and performance of applications and thus is featured in most comparisons \cite{DelSalasZarate.2015, M.Kaluza.2019}.
+It involves the use of various testing methodologies and tools to identify and fix bugs, validate features, and improve the overall quality of the application \cite{Delcev.2018}.
+
+In the context of web development frameworks, testing support can be evaluated based on the availability and robustness of built-in testing tools, the ease of integrating with external testing libraries, and the comprehensiveness of testing methodologies supported. These can range from unit testing and integration testing to end-to-end testing and performance testing \cite{Banu.2023}.
+
+In conclusion, a web development framework with strong testing support can significantly enhance the development process by facilitating the early detection of bugs, improving code quality, and ensuring the delivery of reliable and high-performing applications.
 
 \textbf{Learning curve and getting started:}
 The learning curve and ease of getting started are crucial aspects for web frameworks because they directly affect the developer's productivity. Frameworks that are easy to learn and start with can greatly reduce development time and resources, making them more appealing to both individuals and organizations. Although it's challenging to quantify a learning curve, making it less featured in scientific publications, the plethora of available articles offers ample insight into this criterion. Many of these articles don't elaborate on their conclusion-drawing process, but they generally agree that good documentation, starter guides, and tutorials facilitate new developers. Furthermore, the need for a specific technology stack and the ability to leverage familiar programming paradigms significantly influence the speed at which a new developer can learn a framework. 
 
-\textbf{Basic programming concepts:}
-\textbf{Extensibility:}
-\textbf{Testing:}
-\textbf{Reactive Programming:}
+\textbf{Core concepts:}
+Online articles comparing frameworks frequently underscore their foundational technical concepts. The specifics of these concepts can vary, depending on the frameworks under comparison \cite{Vue.2023}.
+Some articles might focus on aspects such as reactivity and state management, the component model, or HTML & CSS handling. Others might emphasize the use of JavaScript and its supersets, data binding, or the use of directives, decorators, and services \cite{Springer.2018, Neuhaus.2017}.
+
+However, it's crucial to note that the evaluation of these technical concepts is often subjective, influenced by individual preferences, prior experiences, and specific project requirements. From a scientific perspective, it's essential to approach these comparisons with an understanding that there isn't a universally 'best' approach — the effectiveness and suitability of a programming concept can only be determined in the context of its application.
+
+\textbf{Internationalization:}
+Internationalization (i18n) simplifies the task of adapting a product, application, or document to various cultures, regions, or languages. This process aids businesses in their expansion and participation in international trade by reaching a broader audience \cite{DelSalasZarate.2015}. To evaluate a framework's support for internationalization, various aspects of i18n need to be considered. These include its support for Locale-based Content Delivery, Translation Management, URL Routing, TimeZone Support, and even Character Encoding. Each of these components plays a crucial role in ensuring a seamless user experience across different geographical and cultural contexts.
+
+
 \textbf{Templating:}
+Templating is a key feature in many web development frameworks and plays a crucial role in the creation of dynamic web applications. Python with Flask for instance uses the Jinja template engine, which allows developers to create dynamic web pages by combining HTML templates with Python code. Templates promote code reusability, maintainability, and separation of concerns \cite{Vyshnavi.2019}. 
+In the context of Angular, templates form the foundation of its component-based architecture, facilitating data binding and the use of directives for efficient DOM manipulation. This approach to templating not only enhances the modularity and reusability of code but also allows for the creation of highly interactive and dynamic user interfaces, underscoring the pivotal role of templating in modern web development frameworks \cite{Angular.2023}.
+
+
+
+
 \textbf{Security:}
 
 
-\textbf{Use of templates:}
-\textbf{Scalability:}
-\textbf{Internationalization:}
 
-\textbf{Availability of developers:}
-Even though it's not directly related to web development, some studies point out how important it is to have enough developers who know how to use a specific framework (https://medium.com/pixelpassion/angular-vs-react-vs-vue-a-2017-comparison-c5c52d620176)(Kaluža et al.). One way - even if it might not be a very scientific one - of measuring this, as suggested by Kaluža et al., is to count the number of developers who list the given framework as a skill on their LinkedIn profile.
+
+
 
 \textbf{Accessibility:}
-Web accessibility refers to the design and development of websites, tools, and technologies to accommodate users with disabilities, encompassing auditory, cognitive, neurological, physical, speech, and visual impairments, while also benefiting individuals without disabilities who may face situational limitations, use various devices, or have limited internet access.
-(https://www.w3.org/WAI/fundamentals/accessibility-intro/#what)
-Despite not frequently featured in the comparison criteria for web development frameworks, the accessibility support provided by these frameworks for the development of accessible websites holds significant importance. Longley and Elglaly assessed the accessibility support of three web frameworks - Angular, React, and Vue - by intentionally violating guidelines and subsequently monitoring whether the frameworks issued warnings or not.
+Web accessibility refers to the design and development of websites, tools, and technologies to accommodate users with disabilities, encompassing auditory, cognitive, neurological, physical, speech, and visual impairments, while also benefiting individuals without disabilities who may face situational limitations, use various devices, or have limited internet access \cite{W3C.2022}.
+
+Despite not frequently featured in the comparison criteria for web development frameworks, the accessibility support provided by these frameworks for the development of accessible websites holds significant importance. \cite{Longley.2021} assessed the accessibility support of three web frameworks - Angular, React, and Vue - by intentionally violating guidelines and subsequently monitoring whether the frameworks issued warnings or not.
+
+\textbf{Availability of developers:}
+Even though it's not directly related to web development, some studies point out how important it is to have enough developers who know how to use a specific framework \cite{Neuhaus.2017, M.Kaluza.2019, Kumar.2018 }. One way - even if it might not be a very scientific one - of measuring this, as suggested by \cite{M.Kaluza.2019}, is to count the number of developers who list the given framework as a skill on their LinkedIn profile.
 
 
+\begin{comment}
 Del Salas-Zarate et al. have compiled a list of best practices for web application development. They define best practices as the most effective, widely-adopted, and consistently refined methods of achieving desired outcomes. The list was created by gathering the most relevant engineering practices present in the development community 2015. This was done by examining best practices reported in studies of web frameworks featured in various books and the broader web development community. The practices selected are those that enable three crucial quality criteria for the success of web applications: reliability, usability, and security. This is their list:
 \begin{itemize}
   \item AJAX Support
@@ -123,22 +130,11 @@ Kaluza et. al contributed a set of criteria to compare back-end frameworks for w
 \end{itemize}
 While many of the listed criteria are again analogously already included in the catalogue by Rieger and Majchrzak some provide valuable insight how the evaluation framework might be expanded. Mobile phone / iPhone support is considered quite narrowly by Kaluza et. al, as they primarily focus on the presence or absence of this feature. However, this criterion could serve as a potential extension to Rieger and Majchrzak's framework in a broader sense, such as examining how well the developed websites function in mobile browsers. While not strictly related to the technical aspects of web development, Kaluza et. al. interestingly include 'Developer's Availability' as a criterion. This consideration is vital for firms when selecting a framework, as it is important to ensure that there is a sufficient pool of developers available who are proficient in the chosen framework. The 'Project Health' criterion, as described by Kaluza et. al, offers a unique perspective on the vitality and activity surrounding a given framework. It measures the extent of discussion, usage, and resources available online, such as the number of books, tags on StackOverflow, and the quality of official documentation. This criterion reflects the recognizability and popularity of a framework, which can indicate its longevity and continued development. A well-known framework with many resources available is likely to have a larger user base, more support, and a longer lifespan. This can be a crucial consideration for firms when deciding on a framework, as it provides insight into the framework's stability, the availability of support and resources, and the level of community engagement.
 
-\subsection{Comparing JavaScript Frameworks/Libraries}
 
-The well received article titled "Angular vs. React vs. Vue: A 2017 comparison" on Medium provides a comprehensive comparison of these three popular JavaScript frameworks/libraries. The author uses several criteria to compare Angular, React, and Vue. They can be summarized as:
-\begin{itemize}
-    \item Maturity of the frameworks/libraries
-    \item Longevity
-    \item Community Support
-    \item Availability of developers
-    \item Basic programming concepts
-    \item Use of Templates
-    \item Ease of use for small or large applications
-    \item Learning curve
-    \item Performance
-    \item What's happening under the hood
-    \item Getting started
-\end{itemize}
+https://dzone.com/articles/react-vs-angular-vs-vuejs-a-complete-comparison-guide
 
+energy consumption:
+https://dl.acm.org/doi/10.1145/3197231.3197242                                                                        
+https://link.springer.com/chapter/10.1007/978-3-031-34444-2_18
 
-https://dzone.com/articles/react-vs-angular-vs-vuejs-a-complete-comparison-gu
+\end{comment}
