@@ -1,0 +1,23 @@
+\section{Evaluation of Kotlin Multiplatform}
+The third and final section of this related work chapter is dedicated to show how Kotlin Multiplatform has been evaluated in the past. The evaluation conducted in this research will be based on the criteria catalogue developed in chapter 4. The aim of that criteria catalogue is to enable to evaluation of cross-platform development frameworks for mobile ("app-enabled") and web applications. 
+
+The literature is this section is again a mixture of online articles and scientific publications. 
+
+A lot of literature is dedicated to the evaluation and comparison of the mobile ("app-enabled") development capabilities of cross-platform frameworks. 
+\cite{Suri.2023} presents an empirical analysis of three major mobile application development frameworks: Flutter, React Native, and Kotlin. To evaluate the frameworks, the authors developed a simple tic-tac-toe game using each of the three frameworks. The performance of these games was then compared based on various parameters: Application size, performance, code reusability and code complexity. Their results show, that the Kotlin app had the smallest application size and the best performance in all three categories (CPU usage, memory usage and energy usage). Flutter and React Native allow for more code reusability than Kotlin and the code complexity remained the same across all three development frameworks. While Suri et al.'s study provides valuable insights into the performance of Kotlin, Flutter, and React Native, it's important to note the limitations of their research. The comparison categories used in the study, namely application size, performance, code reusability, and code complexity, provide a limited perspective on the overall capabilities of the frameworks. Furthermore, the study focused solely on Android development, which does not provide a complete picture of the cross-platform capabilities of the frameworks. Lastly, the simplicity of the tic-tac-toe game used for the comparison may not fully represent the complexities and challenges of developing a full-featured mobile application.
+
+
+\cite{Jaworski.2021} explored KMP's ability to create a codebase which can be shared between different platforms.  Namely, the paper focuses on the capabilities of KMP for Android and web development.  The study is centered around a proof-of-concept application that Jaworski developed to demonstrate the shared functionality between Android and web applications. This functionality includes making network requests, using a local database, and operating on the app's main data. Although the paper primarily serves as a case study rather than a comparative evaluation, it offers valuable insights into the capabilities of KMP: 
+\begin{itemize}
+    \item \textbf{Code Sharing:} KMP allows for significant code sharing between different platforms, which can lead to increased efficiency and consistency across platforms. This is particularly beneficial for business logic that can be shared across iOS, Android, and the web.
+    
+    \item \textbf{Native Performance:} Kotlin compiles down to native code for each platform, which can lead to performance that is similar to or better than that of native applications.
+    
+    \item \textbf{Interoperability with Native Libraries:} KMP can interoperate with native libraries on each platform. This allows developers to leverage existing libraries and frameworks, which can save time and effort.
+
+    \item \textbf{Gradual Adoption:} KMP can be gradually adopted in existing projects. This means that developers can start using KMP in a part of their project and expand its usage over time, which can reduce the risk and cost of adopting a new technology.
+
+    \item \textbf{Tooling and Support:} KMP has strong tooling support, particularly from JetBrains, the company that created Kotlin. This includes IDE support, debugging tools, and a growing ecosystem of libraries and frameworks.
+
+    \item \textbf{Community and Ecosystem:} The Kotlin community is growing and there is a growing ecosystem of libraries and frameworks for KMP. This can make it easier for developers to find help and resources.
+\end{itemize}
