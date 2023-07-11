@@ -1,0 +1,142 @@
+David Herman
+
+Qualification: 
+
+General comments: 
+- very powerful feature of kotlin multiplatform: develop for example an android app first and then go through all the code and see, what could be shared by for example a website
+
+License:
+- if software is build on top of something the licensing is very important. Apache 2 and MIT are the common choices where you can be sure the licensing wont change in the future
+- MIT might be preferable because it's simpler
+
+Supported target platform: 
+- advantage for web: it's everywhere. supported target platforms are browsers, but a lot of devices have browsers and can access the web
+- In the world of WASM people start to think broader than browsers
+
+Supported development platforms: 
+important as is. 
+
+Distribution Channels: 
+- maybe something like itch.io if you create games for the web
+- but in general it's less important
+- David not familiar with any distribution channels
+- if the users of a web dev framework might want the site to be exported a certain way, so it can be distibuted to a certain platform, then you would think about it.
+
+Monetisation: 
+- Stripe, credit card, paypal
+- the framework could support embedding ads via components and widgets
+- when web pages get big, the developers have to pay service fees and if then the framework has no good support to somehow earn money of the website, the website might have to be taken down
+
+Internationalization: 
+- definitely important
+- i18n support an the web is not good. there is no standardized approach
+- for kobweb at the moment there is no build in support, you would have to come up with you custom solution
+
+Long-term feasibility: 
+- equally important for web
+- for every framework the influence of AI is not forseable atm
+- it's important, that frameworks get to a point where they are self sustaining and not reliant on one developer
+
+Development environment: 
+- equally important
+
+Preparation time: 
+- equally important
+
+Scalability:
+- some of the scalability is out of the frameworks hands, it depends on the way the developers structure the code. 
+- but being able to modularize is very important
+- for kobweb atm, pages should not get to big, because the user will download all the javascript at once and can then navigate the page from that point on.
+
+Development process fit: 
+- you definitely want to be able to have different teams working on separate ends
+
+User interface design:
+- tools to sort of drag and drop ui and preview ui
+- wysiwyg is not needed in web as long as you can see the resulting ui of your code in the browser almost instantly
+- android development with xml and java code seperation failed and is replaced by jetpack compose
+- live reloading is a good feature
+- coming up with layouts be hand is annoying
+
+Testing:
+- a lot of testing in front-end web development is just manual testing on mobile and desktop on a few different browsers
+- integration test: creating templates and make sure that they compile
+
+Continuous Delivery: 
+- in web continuous delivery in web is just going to a website and it's updated
+- with firebase for example as the hosting service you will edit the site and push a staging deplayoment, check it out and then deploy it for everyone
+
+Configuration Management: 
+- when users visit the site, the site checks weather the user is authenticated and then let's you access only the parts of the website that you are authenticated for
+- web is very flexible in this regard
+
+Maintainability: 
+- equally important
+- the framework has limited power over how maintainable the code is written. 
+- but there are certain things the framework can do, to help make the codebase more maintainable like removing boilerplate for example
+- for kobweb: using kotlin over javascript helps the framework be more maintainable
+- don't have big global monolithic components but force the developers to break it down into smaller parts - being able to bundle big things into smaller thing that as a human you are able to understand
+
+Extesibility: 
+- very important in web
+- use of libraries very common
+- in web, the framework should give the developer the choice of where to use the frameworks "native" stuff and where to add functionality
+
+Integrating custom code:
+- native code not relevant in the web
+- but for the underlying cross-platform framework it can be very useful
+
+Pace of development: 
+- equally important
+- eliminating boilerplate code and live reloading are important for pace of development
+
+Access to device-specific hardware: 
+- less important for web
+
+Access to platform-specific functionality:
+- web is intentionally a protective layer that sets away from the underlying operating system
+- web tries to create an experience that generically useful regardless from the device you are connecting from
+- if you access platform-specific functionality you will do it through the browser
+
+Support for connected devices: 
+- less important for web
+- even if multiple devices would somehow interact through the same website they wouldn't talk to each other directly but rather through a web server or similar
+- but nothing the dev framework itself should be concerned about
+
+Input device heterogeneity: 
+- mouse, keyboard, touch
+- accessibility is important, for example a screen reader as an input device
+- but the screen reader will just trigger java script events that in turn will be supported by the framework
+=> javascript already solved this and web frameworks will use the javascript and expose it to the developers in practical ways
+- compose html actually didnt cover all events, so kobweb had to manually add some
+
+Output device heterogeneity: 
+- different screen sizes => responsive design
+- aria tags for screen readers
+
+Application life cyle: 
+- less of a concern
+- in web it's more common to have background tasks or api calls happening and then changing the state on completion of those tasks
+
+System Integration: 
+- equally important
+- most of the time you just use the standards of the web for communication so the integration support that a web dev framework can offer is limited
+
+Security: 
+- biggest thing for web security is that everything is https as a standard
+- front-end can do data validation but mostly web security is happening in the back-end: how you store data and passwords, prevent sql injections etc. 
+- the organization developing the framework could aid developers by guiding them to create secure websites
+
+Robustness: 
+- 
+
+
+
+
+
+Performance:
+- the size of web pages should not be to big
+- typescript generates very small web pages and kotlin/js in comparison generates way bigger sites
+
+
+
