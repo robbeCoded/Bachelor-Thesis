@@ -1,0 +1,170 @@
+Yasin Simsek
+
+ea-dienstleistungen.de
+zenbi-mainz.de
+@ YasinAkimura
+
+
+general: 
+they way flutter renders it's ui on a canvas makes it very hard to support accessibility.
+expo framework for android, ios and web. built on react. has it's own pipeline. (react native with improved build tools)
+
+License: 
+1
+
+Supported target platforms: 
+3
+mobile, tablet, desktop 
+=> browser are target platforms
+=> sometimes PWAs
+
+Supported development platforms:
+1
+
+Distribution Channels:
+2
+Microsoft Store as Distribution channel for PWAs
+everyone distributes on his own server or on a cloud, but it's unusual for frameworks to have built in distribution support
+
+Monetisation: 
+in web, payment support or support for as revenue is mainly delivered through java script libraries. framework should support these libraries (extensibility)
+
+long-term feasibility:
+1
+but web in general is changing slower than mobile. the common technologies in web haven't really changed. it's html/css and JavaScript. 
+
+development environment:
+1
+vs code is mostly the preferred choice for web development because of it's performance. 
+IDEs like android studio or visual studio are slower because of their built in debugging features.
+
+preparation time:
+1
+
+Scalability:
+1
+
+Development process fit:
+1
+a framework that would force a certain development process on the developers wouldn't be a good framework.
+
+User interface design:
+3
+framework should support ui libraries and accessibility libraries. (extensibility)
+community is important to ensure that there are many libraries.
+WYSIWYG is not relevant, developers debug the ui in their browser.
+
+Testing: 
+3
+front-end component tests for self made components. when using libraries, component test are rare.
+manual user tests are common to test the ui. 
+
+Continuous Delivery:
+3
+framework itself is not very engaged in the continuous delivery process. 
+developers are free to choose what they prefer (microsoft azure, github, gitlab, aws, ...)
+
+Configuration Management: 
+2
+in web, since users do not install versions the web application can have certain pages or content that is only accessible to certain users.
+
+Maintainability:
+1
+Opinionated frameworks can make the codebase more maintainable by forcing certain architectures or coding styles upon developers. 
+But frameworks that aren't opinionated aren't automatically less maintainable.
+
+Extensibility:
+1
+very relevant for web.
+
+Integrating custom code:
+2
+java script features will often access native modules. 
+when accessing device specific hardware native code might be of relevance. 
+
+Pace of development: 
+1
+
+Access to device specific hardware:
+2
+???
+
+Especially due to the rise in popularity of PWAs, access to device specific hardware is becoming more relevant in web development.
+BUT it will still be accessed through the browser. 
+With service workers and modern browser APIs, PWAs can provide offline functionality, background data refreshing, push notifications, and even some level of hardware access.
+
+However, it's important to note that PWAs, like regular web applications, are still subject to the security and privacy limitations of the web browser. This means that while they can access some device and platform features, they can't access all of them, especially those that could pose a security risk.
+
+
+
+Access to platform-specific functionality:
+2
+???
+
+Support for connected devices:
+2
+if supported the framework would just expose the relevant java script api.
+
+input device heterogeneity:
+3
+voice recognition, screen readers, touch, mouse, keyboard
+The framework should support all relevant java script events.
+
+output device heterogeneity:
+3
+differing screen sizes. responsive design. 
+output should be structured in a way that makes it accessible for e.g. screen readers
+
+application life cycle:
+2
+the browser has control. if the browser is closed, all processes will be canceled. 
+
+system integration:
+3
+
+Security:
+3
+front-end web security is mostly https and to prevent html injections.
+
+Robustness:
+3
+if using native web technologies, browsers offer a lot of robustness. 
+frameworks should ensure that the functionality they offer is robust.
+react native for example doesn't offer good fallback mechanisms.
+
+Degree of mobility:
+2
+
+Look and feel:
+3
+not a native feel is desired in web but a look and feel that is similar across different platforms (mobile, tablet, desktop) and browsers.
+
+Performance:
+3
+initial load times shouldn't be to long. but the speed with which content is loaded mainly depends on the back-end.
+framework should render fast enough.
+cpu usage, battery drain and so on is often neglected. but large web applications definitely have to account for these as well.
+
+Usage patters:
+3
+users expect certain behaviours from web pages when scrolling for example. 
+
+User authetication:
+3
+social sign in, yubikeys, email and password. 
+biometric authentication is becoming more popular in web as well. 
+=> exposed java script functionality, but needs to be accounted for platform specific usage
+
+Missing:
+- accessibility
+- SEO: good seo support is rare in frameworks
+
+
+
+
+
+
+
+
+
+
